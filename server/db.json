@@ -1,35 +1,4 @@
 {
   "learnhttp": {},
-  "journals": [
-    {
-      "id": "4fbede70-13b2-11ef-8ead-31d45a2fdb3b",
-      "content": "teste",
-      "created_at": "2024-05-06 18:29:47.461154",
-      "updated_at:": "2024-05-06 18:29:47.461154"
-    },
-    {
-      "id": "67e4d090-13b2-11ef-8ead-31d45a2fdb3b",
-      "content": "Alterado!",
-      "created_at": "2024-05-08 15:29:47.461154",
-      "updated_at:": "2024-05-16 17:34:56.513163"
-    },
-    {
-      "id": "67e4d090-13b2-11ef-8ead-31d45a2fdb3b",
-      "content": "Alterado!",
-      "created_at": "2024-05-08 15:29:47.461154",
-      "updated_at:": "2024-05-16 15:41:45.872911"
-    },
-    {
-      "id": "67e4d090-13b2-11ef-8ead-31d45a2fdb3b",
-      "content": "Alterado!2",
-      "created_at": "2024-05-08 15:29:47.461154",
-      "updated_at:": "2024-05-16 15:48:02.984677"
-    },
-    {
-      "id": "67e4d090-13b2-11ef-8ead-31d45a2fdb3b",
-      "content": "Alterado!",
-      "created_at": "2024-05-08 15:29:47.461154",
-      "updated_at:": "2024-05-16 15:49:33.681665"
-    }
-  ]
+  "journals": []
 }

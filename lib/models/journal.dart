@@ -26,6 +26,11 @@ class Journal {
             ? DateTime.parse(map['updated_at'])
             : DateTime.now();
 
+  @override
+  String toString() {
+    return "$content \n created_at: $createdAt\n updated_at:$updatedAt";
+  }
+  
   Map<String, dynamic> toMap() {
     return {
       "id": id,
@@ -33,10 +38,5 @@ class Journal {
       "created_at": createdAt.toString(),
       "updated_at:": updatedAt.toString(),
     };
-  }
-
-  @override
-  String toString() {
-    return "$content \ncreated_at: $createdAt\n updated_at:$updatedAt";
   }
 }
