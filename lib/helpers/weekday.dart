@@ -36,7 +36,7 @@ class WeekDay {
         long = "Sábado";
         break;
     }
-      @override
+  @override
   String toString() {
     return "${long.toLowerCase()}, ${date.day} do ${date.month} de ${date.year}";
   }

@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:http_interceptor/http/http.dart';
 
 class JournalService {
-  static const String url = "http://172.31.208.1:3000/";
+  static const String url = "http://172.26.96.1:3000/";
   static const String resourse = "journals/";
 
   http.Client client =
@@ -32,6 +32,7 @@ class JournalService {
     return false;
   }
 
+// Requisição PUT
   Future<bool> edit(String id, Journal journal) async {
     String jsonJournal = json.encode(journal.toMap());
 
@@ -69,6 +70,7 @@ class JournalService {
     return list;
   }
 
+// Requisição DELETE
   Future<bool> delete(String id) async {
     http.Response response = await http.delete(
       Uri.parse(

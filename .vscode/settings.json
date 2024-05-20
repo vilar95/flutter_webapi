@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/flutter_dev/flutter_webapi/windows/flutter"
+  "cmake.sourceDirectory": "C:/flutter_dev/flutter_webapi/windows/flutter",
+  "cSpell.words": ["Requisição"]
 }

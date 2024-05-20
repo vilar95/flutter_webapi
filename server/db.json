@@ -1,4 +1,17 @@
 {
+  "user": [],
   "learnhttp": {},
-  "journals": []
+  "journals": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "email": "eduardo@gmail.com.br",
+      "password": "123456",
+      "id": 3
+    }
+  ]
 }
