@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter_webapi_first_course/services/http_interceptors.dart';
 import 'package:http/http.dart' as http;
 import 'package:http_interceptor/http/intercepted_client.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
   //TODO: Modularizar o endpoint
@@ -25,11 +26,11 @@ class AuthService {
     if (response.statusCode != 200) {
       throw const HttpException("");
     }
-
+    saveUserInfos(response.body);
     return true;
   }
 
-  register({
+  Future<bool> register({
     required String email,
     required String password,
   }) async {
@@ -38,6 +39,29 @@ class AuthService {
       'email': email,
       'password': password,
     });
+
+    if(response.statusCode != 201){
+      throw HttpException(response.body);
+    }
+    saveUserInfos(response.body);
+    return true;
+  }
+  saveUserInfos(String body) async{
+    Map<String,dynamic> map = json.decode(body);
+    String token = map["accessToken"];
+    String email = map["user"]["email"];
+    int id = map["user"]["id"];
+
+    print("$token\n$email\n");
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setString("accessToken", token);
+    prefs.setString("email", email);
+    prefs.setInt("id", id);
+
+    String? tokenSalvo = prefs.getString("accessToken");
+
+    print(tokenSalvo);
   }
 }
 
