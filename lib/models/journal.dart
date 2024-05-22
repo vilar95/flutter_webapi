@@ -33,7 +33,7 @@ class Journal {
       "id": id,
       "content": content,
       "created_at": createdAt.toString(),
-      "updated_at:": updatedAt.toString(),
+      "updated_at": updatedAt.toString(),
       "userId": userId,
     };
   }

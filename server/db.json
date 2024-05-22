@@ -1,17 +1,29 @@
 {
-  "users": [],
-  "learnhttp": {},
-  "journals": [
+  "users": [
     {
+      "email": "vilar@gmail.com",
+      "password": "$2a$10$iMMkjGbfPa9SeU4m2PKgY.AT/XfeTNAVAx6gx7BNWp46G6cZV9Muu",
       "id": 1
     },
     {
+      "email": "eduardo@gmail.com",
+      "password": "$2a$10$e3zI.K1lZO93EGIhq8UsH.6KUc7UGeIqJ..gaXlg5ph3EVYDzTEGq",
       "id": 2
     },
     {
-      "email": "eduardo@gmail.com.br",
-      "password": "123456",
+      "email": "e.vilar@gmail.com",
+      "password": "$2a$10$4jh3a6/V6hgtA1jzkb3QDu1bMUMMxneoCrH8tw.GyX0vYwDpWL0LG",
       "id": 3
+    }
+  ],
+  "learnhttp": {},
+  "journals": [
+    {
+      "id": "c5dfeda0-1872-11ef-970e-b71b26774c7b",
+      "content": "Lucao é monstro!",
+      "created_at": "2024-05-13 16:37:02.678944",
+      "updated_at": "2024-05-13 16:37:02.678944",
+      "userId": 2
     }
   ]
 }
